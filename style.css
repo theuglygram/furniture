@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: roboto;
+}
+.content-holder{
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 50px;
+}
+.right-side{
+    background: linear-gradient(#5b64670d, #5b6467a1), url(curology.jpg);
+    height: 100vh;
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.lists{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 200px;
+    list-style: none;
+}
+.head{
+    color: white;
+    margin-top: 30px;
+    transition: 0.5s ease-out;
+}
+.head:hover{
+    transform: scale(1.1);
+}
+
+.line{
+    width: 100px;
+    height: 100vh;
+    background-color: black;
+}
+.content{
+    padding: 20px;
+    margin-top: 100px;
+}
+.search-bar{
+    width: 100%; 
+    box-shadow: 1px 1px #bdb7b7 ;
+    border: 1px solid #bdb7b7;
+    border-radius: 2px;
+    outline: none;
+    padding: 5px;
+   
+}
+.icons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+
+}
+.icons .fab{
+    color: white;
+    margin-top: 150px;
+
+}
+.first-text h2{
+    font-family:  Helvetica;  
+    font-size: 60px; 
+    font-weight: 700;
+}
+.first-text{
+    margin-top: 50px;
+}
+input{
+   width: 95%;
+   outline: none;
+   border: none;
+   
+}
+
+.fas{
+    
+    font-size: 24px;
+    
+    color: #00000;
+}
+
+}
+.line{
+    width: 200px;
+    height: 100vh;
+    background-color: black;
+}
+.hold{
+    display: flex;
+    flex-direction: row;
+}
+.first-text p{
+    margin-top: 20px;
+    text-align: justify;
+    font-size: 18px;
+    line-height: 30px;
+   
+}
+button{
+    color: white;
+    background-color: #000000;
+    margin-top: 20px;
+    font-size: 18px;
+    border-radius: 2px;
+    border: none;
+    padding: 10px;
+    width: auto;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.5s ease-out;
+}
+button:hover{
+    transform: scale(1.1);
+}
+.text-right h2{
+    font-family: helvetica;
+    text-align: center;
+    color: white;
+    font-size: 50px;
+}
+.text-right{
+    margin-top: 150px;
+    text-align: center;
+}
+.text-right p{
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 30px;
+    color: #ffffff;
+}
+
+.btn-1{
+    width: fit-content;
+   background-color: black;
+   padding: 10px;
+   font-size: 18px;
+   outline: none;
+   box-shadow: 1px 1px #000000 ;
+   border: none;
+   border-radius: 2px;
+   cursor: pointer;
+    transition: 0.5s ease-out;
+   
+}
+button .btn-1{
+    transform: scale(1.1);
+}
+
+@media only screen and (max-width: 790px){
+    .content-holder{
+        
+        grid-template-columns: 1fr;
+        grid-gap: 30px;}
+    .line{
+        display: none;
+    }
+
+    .search-bar{
+        width: 100%; }
+        input{
+            width: 90%;}
+    .lists{
+        margin-top: 50px;
+    }
+
+    .first-text h2{
+        font-family:  Helvetica;  
+        font-size: 40px; 
+        font-weight: 700;
+    }
+    .line-2{
+        display: block;
+        width: 100%;
+        height: 50px;
+        margin-top: 50px;
+    }
+    .icons{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+        color: white;
+        justify-content: space-around;
+    }
+   .icons .fab{
+        color: white;
+        font-size: 20px;
+        margin-top: 15px;
+    }
+    
+    .head{
+        display: none;
+    }
+}
